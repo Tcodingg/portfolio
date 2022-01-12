@@ -97,3 +97,18 @@ header {
 .nav .menu li:hover::after {
    width: 100%;
 }
+
+/* ====main ==== */
+.main {
+   height: calc(100vh - 3.5rem);
+}
+.main_container {
+   /* background-color: blue; */
+   height: 100%;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+}
+.anim_container {
+   max-width: 500px;
+}
