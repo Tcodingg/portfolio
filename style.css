@@ -9,4 +9,54 @@
 :root {
    --background-color: black;
    --text-color: white;
+
+   /* ==== fonts and typography ==== */
+   --header-height: 3.5rem;
+   --font-family: "Poppins", sans-serif;
+   --title-font-size: 24px;
+   --text-font-size: 16px;
+
+   /* ==== Margins ==== */
+   --mb-1: 0.5rem;
+   --mb-2: 1rem;
+   --mb-3: 1.5rem;
+   --mb-4: 2rem;
+   --mb-5: 2.5rem;
+   --mb-6: 3rem;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: var(--font-family);
+   background-color: var(--background-color);
+   color: var(--text-color);
+}
+
+.bd-container {
+   max-width: 968px;
+   padding: 0 2rem;
+   margin: auto;
+}
+.section {
+   padding: 4rem 0 2rem;
+}
+
+.grid {
+   display: grid;
+   gap: var(--mb-3);
+}
+
+.flex {
+   display: flex;
+   gap: var(--mb-3);
+}
+
+.title {
+   font-size: var(--title-font-size);
+}
+.text {
+   font-size: var(--text-font-size);
 }
