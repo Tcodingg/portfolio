@@ -36,7 +36,7 @@ body {
 
 .bd-container {
    max-width: 968px;
-   padding: 0 2rem;
+   padding: 0 1.5rem;
    margin: auto;
 }
 .section {
@@ -103,12 +103,14 @@ header {
    height: calc(100vh - 3.5rem);
 }
 .main_container {
-   /* background-color: blue; */
    height: 100%;
    justify-content: space-between;
    align-items: center;
    flex-direction: column;
 }
-.anim_container {
-   max-width: 500px;
+.main_container .anim_container {
+   max-width: 400px;
+}
+.main_container .contact a {
+   color: var(--text-color);
 }
