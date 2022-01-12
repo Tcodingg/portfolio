@@ -12,7 +12,8 @@
    /* ==== fonts and typography ==== */
    --header-height: 3.5rem;
    --font-family: "Poppins", sans-serif;
-   --title-font-size: 24px;
+   --title-font-size: 30px;
+   --sub-title-font-size: 24px;
    --text-font-size: 16px;
 
    /* ==== Margins ==== */
@@ -55,6 +56,12 @@ body {
 
 .title {
    font-size: var(--title-font-size);
+   text-transform: capitalize;
+}
+.sub-title {
+   font-size: var(--sub-title-font-size);
+   font-weight: 500;
+   text-transform: capitalize;
 }
 .text {
    font-size: var(--text-font-size);
@@ -110,7 +117,68 @@ header {
 }
 .main_container .anim_container {
    max-width: 400px;
+   width: 100%;
+}
+.main_container .contact {
+   width: 100%;
 }
 .main_container .contact a {
    color: var(--text-color);
+}
+
+/*  ====projects ===== */
+
+.projects-container .title {
+   text-transform: capitalize;
+   margin-bottom: var(--mb-1);
+}
+.projects-container .projects-content {
+   gap: var(--mb-2);
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.projects-container .projects-content .projects-content-left {
+   max-width: 100%;
+}
+.projects-container .projects-content .projects-content-left img {
+   width: 100%;
+   border-radius: 10px;
+}
+.projects-content-left,
+.projects-content-right {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.tech-used {
+   display: flex;
+   gap: 1rem;
+   list-style: none;
+   flex-wrap: wrap;
+   margin-top: var(--mb-2);
+}
+.tech-used li {
+   border: 1px solid white;
+   padding: 2px 10px;
+   border-radius: 10px;
+   font-size: 14px;
+}
+
+/* ====ipad media queries==== */
+
+@media (min-width: 700px) {
+   .main_container {
+      flex-direction: row-reverse;
+   }
+   .main_container .anim_container,
+   .main_container .contact {
+      width: 50%;
+   }
+   .main_container .contact h1 {
+      font-size: 60px;
+      max-width: 400px;
+      line-height: 1;
+      padding-bottom: 1rem;
+   }
 }
