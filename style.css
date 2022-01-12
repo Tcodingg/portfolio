@@ -60,3 +60,26 @@ body {
 .text {
    font-size: var(--text-font-size);
 }
+
+/* ====header==== */
+header {
+   height: var(--header-height);
+   background-color: var(--background-color);
+   width: 100%;
+   position: fixed;
+}
+
+.nav .menu {
+   height: var(--header-height);
+   justify-content: center;
+   align-items: center;
+}
+.nav .menu li {
+   list-style: none;
+}
+.nav .menu li a {
+   text-decoration: none;
+   color: var(--text-color);
+   text-transform: capitalize;
+   font-size: var(--text-font-size);
+}
