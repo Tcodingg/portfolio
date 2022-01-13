@@ -72,6 +72,7 @@ header {
    background-color: var(--background-color);
    width: 100%;
    position: fixed;
+   z-index: 1000;
 }
 
 .nav .menu {
@@ -136,6 +137,7 @@ header {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   margin-bottom: 4rem;
 }
 .projects-container .projects-content .projects-content-left {
    max-width: 100%;
@@ -165,6 +167,9 @@ header {
 }
 
 /* ==== tools ==== */
+.tools {
+   margin-bottom: 4rem;
+}
 .tools-wrapper {
    grid-template-columns: repeat(3, auto);
    justify-content: space-between;

@@ -19,8 +19,8 @@
          <nav class="nav bd-container">
             <ul class="menu flex">
                <li><a href="#">home</a></li>
-               <li><a href="#">projects</a></li>
-               <li><a href="#">tools</a></li>
+               <li><a href="#projects">projects</a></li>
+               <li><a href="#tools">tools</a></li>
             </ul>
          </nav>
       </header>
@@ -49,8 +49,8 @@
          </div>
       </main>
 
-      <section class="projects section">
-         <article class="projects-container bd-container" id="projects">
+      <section class="projects section" id="projects">
+         <div class="projects-container bd-container">
             <h1 class="title">projects</h1>
             <div class="projects-content flex">
                <div class="projects-content-left">
@@ -78,7 +78,7 @@
                </div>
             </div>
 
-            <div class="projects-content section flex">
+            <div class="projects-content flex">
                <div class="projects-content-left">
                   <img src="./images/g5mouse.png" alt="" />
                </div>
@@ -97,7 +97,7 @@
                   </ul>
                </div>
             </div>
-            <div class="projects-content section flex">
+            <div class="projects-content flex">
                <div class="projects-content-left">
                   <img src="./images/portfolio.png" alt="" />
                </div>
@@ -115,12 +115,13 @@
                   </ul>
                </div>
             </div>
-         </article>
+         </div>
       </section>
 
-      <section class="tools section">
-         <article class="tools-container bd-container" id="tools">
+      <section class="tools" id="tools">
+         <div class="tools-container bd-container">
             <h1 class="title">tools</h1>
+
             <div class="tools-wrapper grid">
                <div class="logs-container">
                   <img src="/images/logos/html5.svg" alt="" />
@@ -168,12 +169,7 @@
                   <p>NPM</p>
                </div>
             </div>
-         </article>
+         </div>
       </section>
-
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-         AOS.init();
-      </script>
    </body>
 </html>
